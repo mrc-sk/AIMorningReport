@@ -1,0 +1,13 @@
+# 本地环境
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# 编辑器
+.idea/
+.vscode/
+
+# 系统
+.DS_Store
+Thumbs.db
