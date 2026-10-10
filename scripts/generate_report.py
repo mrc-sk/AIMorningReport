@@ -108,15 +108,19 @@ def refresh_readme(date: _dt.date) -> None:
         re.S,
     )
 
+    date_row = re.compile(r"\| (\d{4}-\d{2}-\d{2}) \|")
+
     def repl(m: re.Match) -> str:
         header, rows, tail = m.group(1), m.group(2), m.group(3)
         entries = [f"| {date.isoformat()} | [查看](reports/{date.isoformat()}.md) |"]
         for row in rows.strip().splitlines():
-            if date.isoformat() in row:
+            row = row.strip()
+            if not row or date.isoformat() in row:
                 continue
-            if row.strip():
-                entries.append(row.strip())
-        entries.sort(reverse=True, key=lambda s: re.search(r"\| (\d{4}-\d{2}-\d{2}) \|", s).group(1))
+            # 只保留真正的数据行（含日期），跳过表格分隔线 `---` 与空行
+            if date_row.search(row):
+                entries.append(row)
+        entries.sort(reverse=True, key=lambda s: date_row.search(s).group(1))
         return header + "\n" + "\n".join(entries) + tail
 
     new_text, n = pattern.subn(repl, text)
