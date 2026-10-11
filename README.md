@@ -133,6 +133,10 @@ OpenAI 向投资者表示，其年化营收正接近 **500 亿美元**，回击�
 | 2026-10-11 | [查看](reports/2026-10-11.md) |
 | 2026-10-10 | [查看](reports/2026-10-10.md) |
 | 2026-10-09 | [查看](reports/2026-10-09.md) |
+| 2026-10-06 | [查看](reports/2026-10-06.md) |
+| 2026-10-05 | [查看](reports/2026-10-05.md) |
+| 2026-10-04 | [查看](reports/2026-10-04.md) |
+| 2026-10-03 | [查看](reports/2026-10-03.md) |
 
 ## 关于本项目
 
@@ -141,7 +145,7 @@ OpenAI 向投资者表示，其年化营收正接近 **500 亿美元**，回击�
 - `README.md`（本文件）即进入仓库后看到的最新一期晨报；
 - 每一期完整内容同时归档于 `reports/YYYY-MM-DD.md`；
 - `scripts/generate_report.py` 可一键生成当日报告骨架并汇总速览；
-- `.github/workflows/daily.yml` 提供每日定时生成与提交的能力（需配置 `GH_TOKEN`）。
+- `.github/workflows/daily.yml` 提供每日定时生成与提交的能力（CI 内使用仓库自带 `GITHUB_TOKEN`）。
 
 ### 本地生成一期新晨报
 
@@ -149,15 +153,12 @@ OpenAI 向投资者表示，其年化营收正接近 **500 亿美元**，回击�
 python3 scripts/generate_report.py --date 2026-10-11
 ```
 
-### 自动化推送（需先授权 GitHub 连接器）
+### 推送到 GitHub
 
-本仓库默认通过 CodeBuddy 的 GitHub 连接器获取令牌。若连接器未授权，请先在
-CodeBuddy 设置页「连接器」中完成 GitHub 授权，然后：
+仓库已关联远程 `origin`（`mrc-sk/AIMorningReport`，默认分支 **main**）。本地工作分支为 `master`，推送时映射：
 
 ```bash
-source <connector>/scripts/get_token.sh github
-git remote add origin https://oauth2:${GITHUB_TOKEN}@github.com/<你的用户名>/AIMorningReport.git
-git push -u origin main
+git push origin master:main
 ```
 
 ---
