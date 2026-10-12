@@ -2,7 +2,7 @@
 
 > 每个清晨，为你精选全球 AI 领域最重要的进展。自动整理，人工可读，开源可查。
 
-[![更新日期](https://img.shields.io/badge/更新-2026--10--11-2ea44f)](reports/2026-10-11.md)
+[![更新日期](https://img.shields.io/badge/更新-2026--10--12-2ea44f)](reports/2026-10-11.md)
 [![频率](https://img.shields.io/badge/频率-每日-blue)](.github/workflows/daily.yml)
 [![许可证](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -130,6 +130,7 @@ OpenAI 向投资者表示，其年化营收正接近 **500 亿美元**，回击�
 
 | 日期 | 链接 |
 | --- | --- |
+| 2026-10-12 | [查看](reports/2026-10-12.md) |
 | 2026-10-11 | [查看](reports/2026-10-11.md) |
 | 2026-10-10 | [查看](reports/2026-10-10.md) |
 | 2026-10-09 | [查看](reports/2026-10-09.md) |
@@ -137,7 +138,6 @@ OpenAI 向投资者表示，其年化营收正接近 **500 亿美元**，回击�
 | 2026-10-05 | [查看](reports/2026-10-05.md) |
 | 2026-10-04 | [查看](reports/2026-10-04.md) |
 | 2026-10-03 | [查看](reports/2026-10-03.md) |
-
 ## 关于本项目
 
 这是一个**自动化 AI 晨报仓库**：
