@@ -2,7 +2,7 @@
 
 > 每个清晨，为你精选全球 AI 领域最重要的进展。自动整理，人工可读，开源可查。
 
-[![更新日期](https://img.shields.io/badge/更新-2026--10--17-2ea44f)](reports/2026-10-12.md)
+[![更新日期](https://img.shields.io/badge/更新-2026--10--18-2ea44f)](reports/2026-10-12.md)
 [![频率](https://img.shields.io/badge/频率-每日-blue)](.github/workflows/daily.yml)
 [![许可证](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -133,6 +133,7 @@ OpenAI 公开了由前沿模型产出的 **722 篇数学手稿**，归为 **372 
 
 | 日期 | 链接 |
 | --- | --- |
+| 2026-10-18 | [查看](reports/2026-10-18.md) |
 | 2026-10-17 | [查看](reports/2026-10-17.md) |
 | 2026-10-16 | [查看](reports/2026-10-16.md) |
 | 2026-10-15 | [查看](reports/2026-10-15.md) |
